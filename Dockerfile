@@ -1,6 +1,8 @@
 FROM ubuntu:14.04
 MAINTAINER Luis Elizondo "lelizondo@gmail.com"
 
+RUN apt-get update
+
 # Let's get serf
 RUN apt-get install -qy supervisor nginx
 
